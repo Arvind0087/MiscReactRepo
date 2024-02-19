@@ -16,10 +16,7 @@ const validationsForm = {
     .string()
     .oneOf([yup.ref("password")], "Password does not match")
     .required("Confirm your password"),
-  website: yup
-    .string()
-    .url()
-    .required("Website is required")
+  website: yup.string().url().required("Website is required"),
 };
 
 export default validationsForm;
