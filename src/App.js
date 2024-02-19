@@ -1,24 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+// import RadioButton from "./components/RadioButton";
+import GalleryPagination from "./components/GalleryPagination";
+import MultipleSelectCheckbox from "./components/MultipleSelectCheckbox";
+import Multicheckbox2 from "./components/Multicheckbox2";
+import OrderTable from "./components/TablePagination/OrderTable";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      {/* <RadioButton /> */}
+      <GalleryPagination />
+      {/*<MultipleSelectCheckbox />*/}
+      {/*<Multicheckbox2 />*/}
+      {/*<OrderTable /> */}
+    </>
   );
 }
 
