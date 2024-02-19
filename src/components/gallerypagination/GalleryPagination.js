@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "../Pagination.css";
+import "../../Pagination.css";
 // import img1 from "../assets/images/img1.jpg"
 
 function GalleryPagination() {
@@ -13,7 +13,7 @@ function GalleryPagination() {
       return r.keys().map(r);
     };
     let images = importAll(
-      require.context("../assets/images", false, /\.(png|jpe?g|svg)$/)
+      require.context("../../assets/images", false, /\.(png|jpe?g|svg)$/)
     );
     setProducts(images);
   }, []);

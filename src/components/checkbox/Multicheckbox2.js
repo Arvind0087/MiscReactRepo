@@ -7,7 +7,7 @@ import MenuItem from "@material-ui/core/MenuItem";
 import FormControl from "@material-ui/core/FormControl";
 import Select from "@material-ui/core/Select";
 
-import { MenuProps, useStyles, options } from "./utils";
+import { MenuProps, useStyles, options } from "../utils";
 
 function Multicheckbox2() {
   const classes = useStyles();

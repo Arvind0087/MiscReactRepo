@@ -1,15 +1,15 @@
 import React from "react";
-import RadioButton from "./components/RadioButton";
-import GalleryPagination from "./components/GalleryPagination";
-import MultipleSelectCheckbox from "./components/MultipleSelectCheckbox";
-import Multicheckbox2 from "./components/Multicheckbox2";
-import OrderTable from "./components/TablePagination/OrderTable";
+import RadioButton from "./components/radiobutton/RadioButton";
+import GalleryPagination from "./components/gallerypagination/GalleryPagination";
+import MultipleSelectCheckbox from "./components/checkbox/MultipleSelectCheckbox";
+import Multicheckbox2 from "./components/checkbox/Multicheckbox2";
+import OrderTable from "./components/TablePaginationWithMultiCheckSelect/OrderTable";
 
 function App() {
   return (
     <>
-      <RadioButton />
-      {/* <GalleryPagination /> */}
+      {/*<RadioButton />*/}
+      <GalleryPagination />
       {/*<MultipleSelectCheckbox />*/}
       {/*<Multicheckbox2 />*/}
       {/*<OrderTable /> */}
