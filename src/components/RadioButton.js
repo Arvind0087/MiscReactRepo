@@ -19,12 +19,12 @@ const RadioInput = styled.input`
 `;
 
 const beforeStyles = {
-    content: '""',
-    display: 'block',
-    width: '100px',
-    height: '100px',
-    background: 'red',
-  };
+  content: '""',
+  display: "block",
+  width: "100px",
+  height: "100px",
+  background: "red",
+};
 
 function RadioButton() {
   const colArr = ["blue", "red", "green"];
@@ -38,8 +38,6 @@ function RadioButton() {
       <div className="App" style={{ color: checkedColor }}>
         Select the radio button to change the color
       </div>
-
-      <h2 style={beforeStyles}>Hello</h2>
 
       <div className="radio-parent">
         {colArr.map((item, index) => (
