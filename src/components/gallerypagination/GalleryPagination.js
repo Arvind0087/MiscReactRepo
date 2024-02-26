@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "../../Pagination.css";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 // import img1 from "../assets/images/img1.jpg"
 
 function GalleryPagination() {
@@ -30,7 +31,14 @@ function GalleryPagination() {
       <div className="products">
         {slicedArray?.map((item, index) => (
           <span className="products__single" key={index}>
-            <img src={item} alt=" Image missing" />
+            {/*<img src={item} alt="Image missing" />*/}
+
+            <LazyLoadImage
+              alt="Image missing"
+              // height={100}
+              src={item}
+              // width={100}
+            />
           </span>
         ))}
       </div>
