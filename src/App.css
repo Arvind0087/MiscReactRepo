@@ -16,11 +16,6 @@ input[type="radio"] {
   display: none;
 }
 
-/* input[type="radio"] {
-  position: absolute;
-  opacity: 0;
-} */
-
 input[type="radio"] + label:before {
   content: "";
   background: #f4f4f4;
@@ -43,8 +38,85 @@ input[type="radio"]:checked + label:before {
   box-shadow: inset 0 0 0 4px #f4f4f4;
 }
 
-/* input[type="radio"]:focus + label:before {
-  outline: none;
-  border-color: #3197ee;
-} */
+iframe {
+  pointer-events: none;
+}
 
+/*Grid Selected*/
+.grid {
+  display: grid;
+  grid-template-columns: repeat(var(--cols, 10), 35px);
+  grid-template-rows: repeat(var(--rows, 10), 35px);
+  gap: 2px;
+  user-select: none;
+}
+
+.box {
+  width: 35px;
+  height: 35px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.selected {
+  background-color: lightblue;
+}
+
+/* Stepper */
+.stepper {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.step-number {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5px;
+  z-index: 2;
+}
+
+.step-name {
+  font-size: 14px;
+}
+
+.active .step-number {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.complete .step-number {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.progress-bar {
+  width: 94%;
+  position: absolute;
+  top: 25%;
+  left: 0;
+  height: 4px;
+  background-color: #ccc;
+  padding-right: 10px;
+}
+
+.progress {
+  height: 100%;
+  background-color: #28a745;
+  transition: 0.2s ease;
+}

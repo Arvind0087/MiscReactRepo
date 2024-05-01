@@ -104,13 +104,11 @@ function MUIFormValidation2() {
     }
   };
 
-  console.log("formik?.values?.thumbnail[0]...", formik?.values?.sourceFile[0])
-
   return (
     <Container maxWidth="xl">
       <form onSubmit={formik.handleSubmit}>
         <Grid container spacing={0} sx={{ mt: 4, mx: 3 }}>
-          <Grid item xs={10} md={6}>
+          <Grid item xs={12} md={6}>
             <AutoCompleteCustom
               sx={{ mt: 2, mr: 3 }}
               name="courseId"
@@ -122,7 +120,7 @@ function MUIFormValidation2() {
               onChange={(event, value) => {
                 formik.setFieldValue("courseId", value);
               }}
-              label="Select Course"
+              // label="Select Course"
               error={formik.touched.courseId && formik.errors.courseId}
             />
           </Grid>
