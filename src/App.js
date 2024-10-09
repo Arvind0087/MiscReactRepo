@@ -15,6 +15,11 @@ import MuiFormValidation3 from "./components/formikYup/muiFormValidation3/MuiFor
 import ReactPlayerVideo from "./components/Video/ReactPlayer";
 import CustomVideo from "./components/Video/CustomVideo";
 import MediaPlayer from "./components/Video/MediaElementJs/MediaPlayer";
+import PhotoGallery from "./components/Gallery/PhotoGallery";
+import MultiSelectPrimeReact from "./components/checkbox/MultiSelectPrimeReact";
+import ReactMultiSelectIndex from "./components/multiselect/ReactMultiSelectIndex";
+import ManualSelect from "./components/ManualSelect/ManualSelect";
+
 import Dummy from "./Dummy";
 import "./App.css";
 
@@ -28,7 +33,7 @@ function App() {
       {/*<OrderTable /> */}
       {/*<MaterialUiForm />*/}
       {/*<MUIFormValidation2 />*/}
-      <MuiFormValidation3 />
+      {/*<MuiFormValidation3 /> */}
       {/*<Accordion />*/}
       {/*<ModalPage />*/}
       {/*<StepperPage />*/}
@@ -37,6 +42,10 @@ function App() {
       {/*<MediaPlayer />*/}
       {/*<CustomVideo />*/}
       {/*<Dummy />*/}
+      {/*<PhotoGallery />*/}
+      {/*<MultiSelectPrimeReact />*/}
+      {/*<ReactMultiSelectIndex /> */}
+      <ManualSelect />
     </>
   );
 }
